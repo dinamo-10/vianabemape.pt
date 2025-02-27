@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viana BEM aPÉ!</title>
+    <style>
+      @font-face {
+        font-family: 'DIN Extrabold';
+        src: url('fonts/DIN-2014_Extra-Bold.woff2') format('woff2'),
+          url('fonts/DIN-2014_Extra-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'DIN Light';
+        src: url('fonts/DIN-2014_Light.woff2') format('woff2'),
+          url('fonts/DIN-2014_Light.woff') format('woff');
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+      }
+
+      body {
+        font-family: 'DIN Extrabold', Arial, sans-serif;
+        font-size: 2.5rem;
+        background-color: #FFE135;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+        text-align: center;
+        flex: 1 0 auto;
+      }
+
+      .header {
+        padding: 2rem;
+        margin: 0 auto 2rem;
+        text-align: center;
+        max-width: 800px;
+      }
+
+      h1 {
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        color: #000;
+      }
+
+      .underline {
+        text-decoration: underline;
+        text-decoration-thickness: 0.7rem;
+        text-underline-offset: 10px;
+      }
+
+      .subtitle {
+        font-family: 'DIN Light', Arial, sans-serif;
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+      }
+
+      .map-image,
+      .brand-logo {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .map-image {
+        max-width: 800px;
+        width: 100%;
+        height: auto;
+      }
+
+      .brand-logo {
+        max-width: 200px;
+        margin: 2rem auto;
+      }
+
+      .content-section {
+        max-width: 800px;
+        margin: 4rem auto;
+        text-align: left;
+        padding: 0 2rem;
+      }
+
+      .content-section p {
+        font-family: 'DIN Light', Arial, sans-serif;
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+
+      .social-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1.5rem 0;
+        font-family: 'DIN Light', Arial, sans-serif;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-top: 2px solid rgba(0, 0, 0, 0.1);
+        flex-shrink: 0;
+      }
+
+      .social-links a {
+        color: #333;
+        text-decoration: none;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+      }
+
+      .social-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 0.5rem;
+      }
+
+      .cc-icons {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+      }
+
+      .cc-icons img {
+        width: 20px;
+        height: 20px;
+      }
+
+      .social-links a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>SE VENS À CIDADE <span class="underline">BEM</span> a PÉ!</h1>
+      <div class="subtitle">dá um passo em frente, diz adeus aos pneus.</div>
+    </div>
+
+    <main class="container">
+      <img src="images/parques.png" alt="Mapa dos parques" class="map-image">
+
+      <section class="content-section">
+        <img src="images/logo.svg" alt="Viana BEM aPÉ Logo" class="brand-logo">
+
+        <p>pretende criar uma consciência colectiva, questionando a forma como usamos o carro na nossa cidade.</p>
+
+        <p>A valorização do espaço público e consequente promoção da qualidade de vida coletiva deve ser uma prioridade
+          para todos.</p>
+
+        <p>Os custos reais das variáveis que não são controladas pelos condutores (trânsito, tempo perdido, combustível,
+          multas), reforçam a importância da opção por uma mobilidade mais sustentável.</p>
+
+        <p>Viana é uma cidade de proximidade. A mudança para uma mobilidade sustentável acontece quando temos a percepção
+          real de que as distâncias são pequenas e impactos das nossas acções na vida de todos é grande.</p>
+
+      </section>
+    </main>
+
+    <footer class="social-links">
+      <a href="https://vianabemape.pt">vianabemape.pt</a>
+      <a href="https://facebook.com/vianabemape" target="_blank" rel="noopener noreferrer">
+        <img src="images/social/facebook.png" alt="Facebook" class="social-icon">
+        vianabemape</a>
+      <a href="https://instagram.com/vianabemape" target="_blank" rel="noopener noreferrer">
+        <img src="images/social/instagram.png" alt="Instagram" class="social-icon">
+        vianabemape</a>
+      <a class="cc-icons" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
+        rel="noopener noreferrer">
+        <img src="images/cc/cc.svg" alt="Creative Commons">
+        <img src="images/cc/by.svg" alt="Attribution">
+        <img src="images/cc/nc.svg" alt="Non Commercial">
+        <img src="images/cc/sa.svg" alt="Share Alike">
+      </a>
+    </footer>
+  </body>
+
+</html>
