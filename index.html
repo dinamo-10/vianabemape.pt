@@ -102,6 +102,7 @@
 
       .social-links {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
         padding: 1.5rem 0;
@@ -109,6 +110,7 @@
         background-color: rgba(0, 0, 0, 0.05);
         border-top: 2px solid rgba(0, 0, 0, 0.1);
         flex-shrink: 0;
+        gap: 1rem;
       }
 
       .social-links a {
@@ -117,6 +119,7 @@
         font-size: 1.1rem;
         display: flex;
         align-items: center;
+        padding: 0.5rem;
       }
 
       .social-icon {
@@ -138,6 +141,17 @@
 
       .social-links a:hover {
         text-decoration: underline;
+      }
+
+      @media screen and (max-width: 768px) {
+        .social-links {
+          flex-direction: column;
+          padding: 1rem 0;
+        }
+        
+        .social-links a {
+          margin: 0.5rem 0;
+        }
       }
     </style>
   </head>
@@ -170,11 +184,12 @@
 
     <footer class="social-links">
       <a href="https://vianabemape.pt">vianabemape.pt</a>
-      <a href="https://facebook.com/vianabemape" target="_blank" rel="noopener noreferrer">
-        <img src="images/social/facebook.png" alt="Facebook" class="social-icon">
-        vianabemape</a>
       <a href="https://instagram.com/vianabemape" target="_blank" rel="noopener noreferrer">
         <img src="images/social/instagram.png" alt="Instagram" class="social-icon">
+        vianabemape</a>
+
+      <a href="https://facebook.com/vianabemape" target="_blank" rel="noopener noreferrer">
+        <img src="images/social/facebook.png" alt="Facebook" class="social-icon">
         vianabemape</a>
       <a class="cc-icons" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
         rel="noopener noreferrer">
